@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&family=Playfair+Display&display=swap');
+:root {
+    --my-black: #000000
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--my-black);
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4.4rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--my-black);
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+/* navigation section */
+nav {
+    display: flex;
+    padding: 1rem 8rem;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100%;
+    border-bottom: 1px solid rgb(216, 216, 216);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: white;
+    font-family: 'Playfair Display','Courier New', Courier, monospace;
+    box-shadow:0 0 10px rgb(208, 208, 208) ;
+    z-index: 10;
+}
+
+div.logo>h1 {
+    font-size: 2rem;
+}
+
+ul.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a.link {
+    display: inline-block;
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.4s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+a.link:hover {
+    background-color: var(--my-black);
+    border-radius: 99px;
+    color: white;
+}
+
+div.hamburger {
+    display: none;
+}
+
+span.bar {
+    background-color: var(--my-black);
+    display: block;
+    width: 1.5rem;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width:850px) {
+    nav {
+        padding: 1rem 2rem;
+    }
+    ul.nav-menu {
+        flex-direction: column;
+        position: fixed;
+        left: -100%;
+        top: 4.4rem;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    div.hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* about secton  */
+#about {
+    background-color: white;
+    display: flex;
+    min-height: 85vh;
+    padding: 2rem 8rem;
+}
+#about > div {
+    width: 50%;
+}
+div.left {
+    padding: 2rem;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+div.text {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Playfair Display','Courier New', Courier, monospace;
+}
+div.text h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+div.text h2{
+    font-size: 2.2rem;
+    color: rgb(255, 0, 85);
+    margin-bottom: 1rem;
+}
+div.text p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(133, 133, 133);
+}
+
+
+div.contact {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+div.social {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 99px;
+    margin: 0.25rem;
+    margin-left: 0;
+    text-align: center;
+    vertical-align: middle;
+    background-color: white;
+}
+.fa-brands:hover {
+    text-shadow: 2px 2px 1rem rgb(184, 184, 184);
+}
+.fa-instagram {
+    color: rgb(255, 0, 140);
+}
+.fa-linkedin-in {
+    color: rgba(61, 61, 255, 0.938);
+}
+
+div.right {
+    text-align: center;
+}
+
+div.right > img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 70vh;
+}
+
+@media (max-width:850px) {
+    #about {
+        padding: 2rem 2rem;
+    }
+}
+@media (max-width:650px) {
+    #about {
+        flex-direction: column-reverse;
+    }
+    #about > div {
+        width: 100%;
+    }
+    div.right > img {
+        height: 50vh;
+    }
+    div.left {
+        padding: 2rem 0;
+    }
+}
+
+/* projects section */
+section.projects-section {
+    padding: 2rem 8rem;
+}
+h1.section-title {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 2rem;
+    font-family: 'Playfair Display','Courier New', Courier, monospace;
+}
+
+div.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    width: 100%;
+    gap: 2rem;
+    margin: 0 auto;
+}
+@media (max-width:850px) {
+    section.projects-section {
+        padding: 2rem 2rem;
+    }
+}
+
+@keyframes disco {
+    0% {border-color: rgb(255, 115, 115);}
+    20% {border-color: rgb(255, 251, 0);}
+    40% {border-color: rgb(0, 255, 21);}
+    60% {border-color: rgb(0, 204, 255);}
+    80% {border-color: rgb(255, 217, 0);}
+    100% {border-color: rgb(255, 131, 131);}
+}
+
+div.project-card {
+    position: relative;
+    bottom: 0;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid #252525;
+    min-height: 45vh;
+    transition: all 0.5s;
+    box-shadow: 0px 0px 20px rgba(165, 255, 225, 0.774);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+    font-family: 'Courier New', Courier, monospace;
+}
+div.project-card:hover, div.project-card:focus{
+    border: 3px solid;
+    bottom: 0.5rem;
+    animation-name: disco;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+div.project-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+div.project-title-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    padding-bottom: 0.25rem;
+    font-family: 'Playfair Display','Courier New', Courier, monospace;
+}
+
+div.project-description > p {
+    color: rgb(88, 88, 88);
+    font-weight: 100;
+    text-align: left;
+}
+ul.technolgies {
+    padding-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+ul.technolgies > li {
+    font-size: 0.9rem;
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    color: rgb(141, 141, 141);
+    border-radius: 8px;
+}
