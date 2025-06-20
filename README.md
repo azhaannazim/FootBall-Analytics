@@ -110,11 +110,6 @@ on the field.
 
   https://github.com/user-attachments/assets/263b4cd0-2185-4ed3-9be2-cf4d8f5bfa67
 
-## 🗺️ roadmap
-
-- [ ] Add smoothing to eliminate flickering in RADAR mode.
-- [ ] Add a notebook demonstrating how to save data and perform offline data analysis.
-
 ## © license
 
 This demo integrates two main components, each with its own licensing:
