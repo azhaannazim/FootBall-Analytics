@@ -23,6 +23,7 @@ downloaded from the [Roboflow Universe](https://universe.roboflow.com/).
 | Football player detection         | [![Download Dataset](https://app.roboflow.com/images/download-dataset-badge.svg)](https://universe.roboflow.com/roboflow-jvuqo/football-players-detection-3zvbc) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/17NgllQqHYo1hrWfCFU1UReZBpFeh48BE#scrollTo=Y8cDtxLIBHgQ)         |
 | ball detection           | [![Download Dataset](https://app.roboflow.com/images/download-dataset-badge.svg)](https://universe.roboflow.com/roboflow-jvuqo/football-ball-detection-rejhg)    | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1b0-w24XU4D37Pl8QWy76Fl5GpUSCyPLd#scrollTo=Y8cDtxLIBHgQ)           |
 | Football pitch keypoint detection | [![Download Dataset](https://app.roboflow.com/images/download-dataset-badge.svg)](https://universe.roboflow.com/roboflow-jvuqo/football-field-detection-f07vi)   | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/13E5CRMr90ko5vtUoBpOIHc9yeQpQKqq9#scrollTo=Y8cDtxLIBHgQ) |
+| pich domination detection |   | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1S_lD5KvTPZaLHEa-Riz35LyqlyyZCalx#scrollTo=WQX_3KmAczkW) |
 
 ## 🤖 models
 
