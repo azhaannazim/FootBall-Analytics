@@ -1,4 +1,4 @@
-# Soccer AI ⚽
+# FootBALL ANALYTICS ⚽
 
 ## 💻 install
 
@@ -7,7 +7,7 @@ We don't have a Python package yet. Install from source in a
 
 ```bash
 pip install git+https://github.com/roboflow/sports.git
-cd examples/soccer
+cd examples/Football
 pip install -r requirements.txt
 ./setup.sh
 ```
@@ -20,16 +20,16 @@ downloaded from the [Roboflow Universe](https://universe.roboflow.com/).
 
 | use case                        | dataset                                                                                                                                                          | train model                                                                                                                                                                                            |
 |:--------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| soccer player detection         | [![Download Dataset](https://app.roboflow.com/images/download-dataset-badge.svg)](https://universe.roboflow.com/roboflow-jvuqo/football-players-detection-3zvbc) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/17NgllQqHYo1hrWfCFU1UReZBpFeh48BE#scrollTo=Y8cDtxLIBHgQ)         |
-| soccer ball detection           | [![Download Dataset](https://app.roboflow.com/images/download-dataset-badge.svg)](https://universe.roboflow.com/roboflow-jvuqo/football-ball-detection-rejhg)    | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1b0-w24XU4D37Pl8QWy76Fl5GpUSCyPLd#scrollTo=Y8cDtxLIBHgQ)           |
-| soccer pitch keypoint detection | [![Download Dataset](https://app.roboflow.com/images/download-dataset-badge.svg)](https://universe.roboflow.com/roboflow-jvuqo/football-field-detection-f07vi)   | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/13E5CRMr90ko5vtUoBpOIHc9yeQpQKqq9#scrollTo=Y8cDtxLIBHgQ) |
+| Football player detection         | [![Download Dataset](https://app.roboflow.com/images/download-dataset-badge.svg)](https://universe.roboflow.com/roboflow-jvuqo/football-players-detection-3zvbc) | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/17NgllQqHYo1hrWfCFU1UReZBpFeh48BE#scrollTo=Y8cDtxLIBHgQ)         |
+| ball detection           | [![Download Dataset](https://app.roboflow.com/images/download-dataset-badge.svg)](https://universe.roboflow.com/roboflow-jvuqo/football-ball-detection-rejhg)    | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1b0-w24XU4D37Pl8QWy76Fl5GpUSCyPLd#scrollTo=Y8cDtxLIBHgQ)           |
+| Football pitch keypoint detection | [![Download Dataset](https://app.roboflow.com/images/download-dataset-badge.svg)](https://universe.roboflow.com/roboflow-jvuqo/football-field-detection-f07vi)   | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/13E5CRMr90ko5vtUoBpOIHc9yeQpQKqq9#scrollTo=Y8cDtxLIBHgQ) |
 
 ## 🤖 models
 
 - [YOLOv8](https://docs.ultralytics.com/models/yolov8/) (Player Detection) - Detects 
 players, goalkeepers, referees, and the ball in the video.
 - [YOLOv8](https://docs.ultralytics.com/models/yolov8/) (Pitch Detection) - Identifies 
-the soccer field boundaries and key points.
+the Football field boundaries and key points.
 - [SigLIP](https://huggingface.co/docs/transformers/en/model_doc/siglip) - Extracts 
 features from image crops of players.
 - [UMAP](https://umap-learn.readthedocs.io/en/latest/) - Reduces the dimensionality of 
@@ -39,8 +39,8 @@ Clusters the reduced-dimension features to classify players into two teams.
 
 ## 🛠️ modes
 
-- `PITCH_DETECTION` - Detects the soccer field boundaries and key points in the video. 
-Useful for identifying and visualizing the layout of the soccer pitch.
+- `PITCH_DETECTION` - Detects the Football field boundaries and key points in the video. 
+Useful for identifying and visualizing the layout of the Football pitch.
 
   ```bash
   python main.py --source_video_path data/2e57b9_0.mp4 \
@@ -99,7 +99,7 @@ analysis and visualization.
 
 - `RADAR` - Combines pitch detection, player detection, tracking, and team 
 classification to generate a radar-like visualization of player positions on the 
-soccer field. Provides a comprehensive overview of player movements and team formations 
+Football field. Provides a comprehensive overview of player movements and team formations 
 on the field.
 
   ```bash
